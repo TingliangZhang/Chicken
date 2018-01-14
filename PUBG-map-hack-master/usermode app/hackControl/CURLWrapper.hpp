@@ -42,8 +42,8 @@ public:
 
 			curl_easy_setopt(m_curl, CURLOPT_VERBOSE, 0L);
 			curl_easy_setopt(m_curl, CURLOPT_HTTPHEADER, headers);
-			curl_easy_setopt(m_curl, CURLOPT_URL, "https://epic-pubg-maphack.firebaseio.com/locations.json");
-			curl_easy_setopt(m_curl, CURLOPT_CUSTOMREQUEST, "PUT");
+			curl_easy_setopt(m_curl, CURLOPT_URL, "http://127.0.0.1:7890/");
+			curl_easy_setopt(m_curl, CURLOPT_CUSTOMREQUEST, "POST");
 			// curl_easy_setopt(curl, CURLOPT_TIMEOUT_MS, 30L);
 			curl_easy_setopt(m_curl, CURLOPT_WRITEFUNCTION, write_data);
 			curl_easy_setopt(m_curl, CURLOPT_POSTFIELDS, w_data.data());
